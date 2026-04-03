@@ -1,18 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function Counter() {
-    const [count, setCount] = useState(0);
-    const handleAdd = () =>{
-        const newCount = count + 1
-        setCount(newCount)
-    }
-    const counterStyle = {
-        border : '2px solid yellow'
-    }
-    return (
-        <div style={counterStyle}>
-            <h3>Count: {count}</h3>
-            <button onClick={handleAdd}>Add</button>
-        </div>
-    );
-};
+  const [count, setCount] = useState(0);
+  const handleAdd = () => {
+    const newCount = count + 1;
+    setCount(newCount);
+  };
+  const counterStyle = {
+    border: "2px solid yellow",
+  };
+  return (
+    <div style={counterStyle}>
+      <h3>Count: {count}</h3>
+      <button onClick={handleAdd}>Add</button>
+      <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur,
+        reprehenderit pariatur recusandae impedit enim vitae quod aut, maiores
+        libero voluptatem adipisci saepe temporibus. Atque culpa iusto vitae
+        obcaecati cupiditate.
+      </h3>
+    </div>
+  );
+}
